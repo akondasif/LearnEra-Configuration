@@ -1,5 +1,4 @@
 #
-# TODO: Needed while this repo is private
 #
 - name: upload ssh script
   template:
@@ -11,7 +10,6 @@
   - update
 
 #
-# TODO: Needed while this repo is private
 #
 - name: install read-only ssh key required for checkout
   copy:
@@ -37,7 +35,6 @@
     - update
 
 #
-# TODO: Needed while this repo is private
 #
 - name: update src permissions
   file:
@@ -49,7 +46,6 @@
   - update
 
 #
-# TODO: Needed while this repo is private
 #
 - name: remove read-only ssh key for the content repo
   file: path={{ analytics_git_identity_dest }} state=absent
@@ -59,7 +55,6 @@
   - update
 
 #
-# TODO: Needed while this repo is private
 #
 - name: remove ssh script
   file: path={{ analytics_git_ssh }} state=absent
